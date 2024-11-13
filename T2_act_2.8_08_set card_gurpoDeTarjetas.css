@@ -1,0 +1,32 @@
+.contenedor{
+    display:flex;
+    justify-content: space-around;/* distribuye los elementos equitativamente con espacios iguales entre ellos*/
+  }
+  .card{
+    display: flex;
+    flex-direction: column;/*contenedor en una columna, uno debajo del otro.*/
+    font-family: sans-serif;
+    box-shadow: 0px 0px 7px 0px lightgrey;/*una sombra ligera alrededor de la tarjeta*/
+    border: 0; /*Elimina el borde de la tarjet*/
+  }
+  .cuerpo{
+    flex: 1 1 0;/* ocupe el espacio disponible en el contenedor padre, con una base de 0.*/
+    padding: 8px;/* espacio interno*/
+  }
+  .title{     
+    background: black;
+    display: flex;
+    color: white;
+    align-items: center;/* Centra verticalmente el contenido dentro del elemento.*/
+    justify-content: center;/*Centra horizontalmente el contenido dentro del elemento.*/
+    height: 40px;
+  }
+  .pie{
+    background: darkgray;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+  }
+  

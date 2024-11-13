@@ -1,0 +1,24 @@
+body{
+    font-family: sans-serif;
+    display: flex;
+    padding: 20px;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+  .izquierda{
+    flex: 2;
+    padding: 12px;
+    background: rgba(14,124,116,1.00);
+    color: white;
+  }
+  .derecha{
+    flex: 1;
+    display: flex;
+    flex-direction: column;/*elementos uno debajo de otro*/
+  }
+  .fila{
+    flex: 1 1 100%;/*cada fila debe crecer y encoger en la misma proporción y ocupar el 100%*/
+    border: 1px solid lightgray;
+    padding: 24px;
+  }
+  

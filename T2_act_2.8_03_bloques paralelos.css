@@ -1,0 +1,16 @@
+ ul{
+    display:flex;
+    justify-content: space-between;/* distribuye los elementos  con espacio entre ellos*/
+    gap: 2px;/*espacio entre elementos*/
+    padding:0;/* elimina el pacio para dentro que se crea cuando hay una lista */
+    list-style: none;/* oculta marcadores de la lista*/
+  }  
+  ul li{
+    font-family: sans-serif;
+    background: rgba(123,198,199,0.8);
+    flex: 1 1 0; /* matine los mismos tañamos aunque se hagan grandes o pequeños*/
+    /*1: el elmento debe crecer si se amplia para ocupar todo el espacio disponible.
+    1: la base mínima del elemento, incluso si no hay espacio suficiente.
+    0:el  elemento no debe contraerse más allá de su tamaño mínimo.*/
+  }
+  

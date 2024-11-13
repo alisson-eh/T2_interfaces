@@ -1,0 +1,20 @@
+.main{
+    display:flex;/*elementos organizados en un sola fila*/
+    gap: 2px;/*espacio entre los elementos*/
+    min-height: 100vh;/*altura mínima del contenedor en el 100% viewport, asegurando que ocupe toda la pantalla. */
+    font-family: sans-serif;
+  }  
+  .main .sidebar,
+  .main .contenido{
+    height: 100vh;/*altura mínima, que ocuoe tod la pantalla */
+    padding: 12px 24px;/*relleno de 12px arriba y abajo y 24px izq y derecha */
+  }
+  .main .sidebar{
+    background: rgb(133,215,239);
+    flex: 1;/*factor de crecimiento de 1 a la barra lateral,ocupa una proporción del la caja principal */
+  }
+  .main .contenido{
+    background: rgb(193,219,210);
+    flex: 4;/* ocupará cuatro veces más espacio que la barra lateral */
+  }
+  

@@ -1,0 +1,19 @@
+ul{
+    display:flex;/* caja en una sola linea*/
+    justify-content: space-between;/* elementos con espacio entre ellos*/
+    gap: 2px;/* espacio de 2 píxeles entre los elementos de lista.*/
+    padding:0; /* elimina el relleno predeteminado entre los elementos de la lista*/
+    list-style: none; /*oculta los marcadores de la lista.*/
+  }  
+  ul li{
+    background: rgba(123,198,199,0.8);/* fondo semitransparente 0.8*/
+    flex-grow: 1; /* los elementos de lista se expandan para ocupar todo el espacio disponible en la lista.*/
+  }
+  ul a, ul a:link{
+    font-family: sans-serif;
+    text-decoration: none; /* Elimina el subrayado del enlace. */
+    color: black;
+    padding: 8px;/* Agrega un relleno de 8 píxeles alrededor del texto del enlace */
+    display:block; /* el enlace ocupe todo el ancho del elemento de lista, permitiendo clics en todo el área.*/
+    width:100%; /* Asegura que el enlace ocupe todo el ancho del elemento de lista. */
+  }

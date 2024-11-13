@@ -1,0 +1,33 @@
+.card{
+    display: flex;
+    flex-direction: column;/*se apilen verticalmente, uno debajo del otro.*/
+    width: 400px;
+    font-family: sans-serif;
+    height: 300px;
+    box-shadow: 0px 0px 7px 0px lightgrey; /*sombra sutil alrededor de la tarjeta*/
+    border: 0; /* Elimina cualquier borde por defecto.*/
+  }
+  .cuerpo{
+    flex: 4;/*ocupará 4/6 del espacio restante dentro de la tarjeta*/
+    padding: 8px;
+  }
+  .title{     
+    flex: 1;/*compartirán el espacio restante por igual*/
+    display: flex;
+    align-items: center;/* flex-direction: column -> centrará verticalmente el contenido dentro de .title y .pie.*/
+    justify-content: center;/* flex-direction: column -> centrará horizontalmente el contenido dentro de .title y .pie. */
+    color: white;
+    background: black;
+  }
+  h4{
+    padding:0; /* elimina cualquier espacio interno:el texto estará pegado a los bordes del contenedor.*/
+  }
+  .pie{
+    display: flex;
+    flex: 1;
+    align-items: center;/*Centra verticalmente los elementos hijos dentro del contenedor */
+    justify-content: center;/*Centra horizontalmente los elementos hijos  dentro del contenedor*/
+    background: darkgray;
+    color: white;
+  }
+  

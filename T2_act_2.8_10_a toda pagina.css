@@ -1,0 +1,31 @@
+body{
+    font-family: sans-serif;
+    flex-direction: column;
+    display:flex;
+    height: 100vmin;
+  }
+.cabecera{
+    text-align: center;/*Centra el texto horizontalmente.*/
+    font-size: 24px;/** tamaño de la letra/
+    font-weight: bold;/* estilo de fuente en negrita.*/
+    padding: 20px;
+    background: #D08700;
+    height: 24px;
+  }
+div{
+    text-align: center;/*Centra el texto horizontalmente.*/
+  }
+.cuerpo{
+    display: flex;
+    height: 100%;/*altura de la sección del cuerpo en un 100% de su contenedor padre*/
+  }
+.sidebar{
+    flex: 1 1 0;/*1  a la barra lateral,ocupa un parte del espacio disponible*/
+    background: #4D4F52;
+    color: white;
+    padding: 24px;
+  }
+.centro{
+    flex: 2 1 0;/*2 unidades a la seccion central,ocupa el doble que la barra lateral*/
+    padding: 24px;
+  }

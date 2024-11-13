@@ -1,0 +1,39 @@
+.main{
+    display:flex;
+    gap: 2px;
+    min-height: 100vh;/* que tenga la misma altura que toda la venta(ocupe toda la pantalla)*/
+    font-family: sans-serif;
+  }  
+  .main .sidebar,
+  .main .contenido{
+    height: 100vh;/*tienen la misma altura que la ventana del navegador.*/
+    padding: 12px 24px;
+  }
+  .main .sidebar{
+    background: rgb(133,215,239);
+    flex: 1;/* 1 ocupa un espacio flexible de la barra lateral*/
+  }
+  .main .contenido{
+    background: rgb(193,219,210);
+    flex: 8;/* 8 ocupa mas que el lateral */
+  }
+  ul{
+    display:flex;
+    flex-direction: column;/* los elementos se colocan verticalmente*/
+    flex-basis: 100%;/* tamaño inicial:ocupa todo es espacio ,dependiendo flex-direction,credera o encoge proporcionalmente.*/
+    justify-content: space-between;
+    gap: 2px;
+    padding:0;
+    list-style: none;
+  }  
+  ul li{
+    border-bottom: 1px solid black;/*borde inferior sólido de 1px */
+  }
+  ul a, ul a:link{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+    padding: 8px 12px;/*8 arriba y abajo y 12 izq y derecha*/
+    display:block;
+    width:100%;
+  }

@@ -1,0 +1,13 @@
+.cuadro{
+    display:flex;
+    justify-content: center;/*alinea los elementos hijos horizontalmente en el centro del contenedo*/
+    align-items: center;/*alinea los elementos hijos verticalmente en el centro del contenedor.*/
+    gap: 2px;/* espacio entre elemento*/
+    width: 300px;/*ancho del cuadrado*/
+    height: 300px;/*altura del cuadrado*/
+    background: rgba(193,219,210,1.00);
+    padding:0;/*elimina cualquier relleno interno del cuadrado.*/
+    list-style: none;
+    font-family: sans-serif;
+  }  
+
