@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+    height: 10%; 
+    background-color: darkblue;
+    padding: 0;
+    padding-right: 50px;
+}
+
+h1 {
+    color: white;
+    justify-content: flex-start;
+    margin-left: 50px;
+}
+
+.pde {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    padding: 10px 20px;
+    background-color: red;
+}
+
+/* Ajustes de la sección principal */
+section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80%; 
+    gap: 20px;
+    overflow: hidden; 
+
+}
+
+section > * {
+    flex: 1; 
+}
+
+.texto {
+    padding-top: 50px;
+    padding-left: 50px;
+   
+    line-height: 1.5;
+}
+
+
+@media (max-width: 900px) {
+    .texto {
+        font-size: 14px; 
+        padding-left: 20px; 
+    }
+}
+
+
+@media (min-width: 910px) {
+    .texto {
+        font-size: 17px; 
+        padding-left: 20px; 
+    }
+}
+
+
+
+.tabla {
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    height: 100%;
+}
+
+.color {
+    background-color: rgb(228, 145, 0);
+}
+
+table {
+    background-color: rgb(233, 152, 23);
+    margin: 10px;
+    border: none;
+    height: 100%;
+}
+
+tr th {
+    background-color: darkred;
+    color: white;
+    border: none;
+}
+th{
+    height: 50%;
+}
+
+/* Ajustes del footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+    height: 10%; 
+    background-color: darkblue;
+    padding: 0 50px;
+}
+
+.pdea, .piz {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    padding: 10px 20px;
+}
+
+.pdea {
+    background-color: rgb(250, 154, 0);
+}
+
+.piz {
+    background-color: red;
+}
