@@ -1,0 +1,65 @@
+<!--Utiliza las areas definidas en grid para construir esta disposición, 
+simlar al ejercicio anterios. En el código HTML las celdas con el texto celda xx son los elementos escritos como bloques div.
+ El ancho de la primera columna es 100px y las restantes son 200px. La alineación del texto al centro es un estilo CSS con el color o el fondo.
+La linea entre celdas es un gap de 1px. 
+Intenta logarar el mismo aspecto que la figura. -->
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ejercicio numero 4 de uso del Grid</title>
+<style>
+  .tabla{
+    font-family: sans-serif;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: 100px repeat(4, 1fr);
+    grid-template-areas: 
+      'cabecera cabecera cabecera cabecera cabecera '
+      'sidebar col1 col1 col2 col2 '
+      'sidebar col3 col3 col4 col4 '; 
+    justify-items: stretch;
+    margin: 0 auto;
+    width: 500px;
+  } 
+  .tabla div{
+    background: #697C88;
+    color: white;
+    padding: 18px;
+    text-align: center;
+  }
+  .cabecera{
+    grid-area: cabecera;
+  }
+  .sidebar{
+    grid-area: sidebar; 
+    
+  }
+  .col1{
+    grid-area: col1;
+  }
+  .col2{
+    grid-area: col2
+  }
+  .col3{
+    grid-area: col3;
+  }
+  .col4{
+    grid-area: col4
+  }
+
+</style>
+</head>
+<body>
+  
+<div class="tabla">
+  <div class="cabecera"> Usando grid-areas </div>
+  <div class="sidebar"> celda 2</div>
+  <div class="col1"> celda 3</div>
+  <div class="col2"> celda 4</div>
+  <div class="col3"> celda 5</div>
+  <div class="col4"> celda 6</div>
+</div>
+</body>
+</html>

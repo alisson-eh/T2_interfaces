@@ -1,0 +1,44 @@
+<!--En el código HTML las celdas con el texto celda xx son elementos escritos como bloques div en orden: 
+desde la celda 1 a la celda 6, pero en el layout deben aparecer en el orden que se muestra, es decir,
+ la primera celda debe aparecer al final. Intenta logarar el mismo aspecto que la figura, 
+ como ves todas las celdas tienen el mismo ancho .
+ -->
+ 
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ejercicio numero 8 de uso del Grid: orden</title>
+<style>
+  .tabla div{
+    background: #697C88;
+    color: white;
+    padding: 18px;
+  }
+
+  .tabla{
+    font-family: sans-serif;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(3, 150px);
+    margin: 0 auto;
+    width: fit-content;
+  } 
+  .celda1{
+      order: 2
+  }
+
+</style>
+</head>
+<body>
+  
+<div class="tabla">
+  <div class="celda1"> celda 1 </div>
+  <div class="celda2"> celda 2</div>
+  <div class="celda3"> celda 3</div>
+  <div class="celda4"> celda 4</div>
+  <div class="celda5"> celda 5</div>
+  <div class="celda6"> celda 6</div>
+</div>
+</body>
+</html

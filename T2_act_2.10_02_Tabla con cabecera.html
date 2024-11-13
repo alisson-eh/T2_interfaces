@@ -1,0 +1,42 @@
+<!-- Trata de construir esta disposición tipo tabla usando el layout tipo grid. 
+ En el código HTML los elementos hijos son las celdas con el texto celda xx y esta´n escritos como bloques div. 
+ La alineación del texto al centro es un estilo CSS com el color o el fondo. 
+ La linea entre celdas es un gap de 1px. Intenta logarar el mismo aspecto que la figura.-->
+
+ <!doctype html>
+ <html>
+ <head>
+ <meta charset="utf-8">
+ <title>Ejercicio numero 2 de uso del Grid. Cabecera</title>
+ <style>
+   .tabla{
+     font-family: sans-serif;
+     display: grid;
+     grid-gap: 2px;
+     grid-template-columns: repeat(3,150px);
+     margin: 0 auto;
+     width: 450px;
+   } 
+   .tabla div{
+     background: #697C88;
+     color: white;
+     padding: 18px;
+     text-align: center;
+   }
+   .cabecera{
+     grid-column: 1/4;
+   }
+ </style>
+ </head>
+ <body>
+ <div class="tabla">
+   <div class="cabecera"> celda 1</div>
+   <div> celda 2</div>
+   <div> celda 3</div>
+   <div> celda 4</div>
+   <div> celda 5</div>
+   <div> celda 6</div>
+   <div> celda 7</div>
+ </div>
+ </body>
+ </html>

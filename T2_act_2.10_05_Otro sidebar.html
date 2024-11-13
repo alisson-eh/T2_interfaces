@@ -1,0 +1,51 @@
+<!-- Trata de construir esta disposición con celdas unidas entre si para formar ese sidebar derecho con el texto celda2 y la cabecera cn el texto celda 1. 
+ Usa el layout tipo grid. En el código HTML las celdas con el texto celda xx son los elementos escritos como bloques div. 
+ La alineación del texto al centro es un estilo CSS com el color o el fondo. 
+ La linea entre celdas es un gap de 1px. Intenta logarar el mismo aspecto que la figura.-->
+ 
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ejercicio numero 5 de uso del Grid</title>
+<style>
+  .tabla{
+    font-family: sans-serif;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(4, 1fr);
+    
+    margin: 0 auto;
+    width: 500px;
+  } 
+  .tabla div{
+    background: #697C88;
+    color: white;
+    padding: 18px;
+    text-align: center;
+     
+  }
+  .cabecera{
+      grid-column: 1 / span 3;
+      grid-row: 1
+  }
+  .sidebar{
+      grid-column: 4;
+      grid-row: 1/ span 2;
+      justify-content: center;
+      align-items: center;
+  }
+
+</style>
+</head>
+<body>
+  
+<div class="tabla">
+  <div class="cabecera"> celda 1 </div>
+  <div class="sidebar"> celda 2</div>
+  <div> celda 3</div>
+  <div> celda 4</div>
+  <div> celda 5</div>
+</div>
+</body>
+</html>
