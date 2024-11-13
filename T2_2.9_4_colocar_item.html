@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./2.9_1.css">
+
+    <style>
+        .contenedor{
+            display: flex;
+            flex-direction:row;
+            justify-content: center;
+            gap: 10px;
+            background-color: rgb(178, 180, 179);
+            height:200px;
+            width: 100%;
+            margin: 20px;
+        }
+         div{
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            width:40px;
+            height: 40px;
+            border-style: solid;
+            text-align: center;
+            background-color:rgb(255, 89, 0);
+        }
+        .caja3arriba{
+            align-self: flex-start;
+        }
+        .caja3abajo{
+            align-self: flex-end;
+        }
+
+        .dimensiones1{
+            height: 20px;
+        }
+        .dimensiones2{
+            height: 50px;
+        }
+        .dimensiones3{
+            height: 40px;
+        }
+        .dimensiones4{
+            height: 60px;
+        } 
+        .dimensiones5{
+            height: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div>1</div>
+        <div>2</div>
+        <div class="caja3arriba">3</div>
+        <div>4</div>
+        <div >5</div>
+    </div>
+
+    <div class="contenedor">
+        <div>1</div>
+        <div>2</div>
+        <div class="caja3abajo">3</div>
+        <div>4</div>
+        <div >5</div>
+    </div>
+
+    <div class="contenedor">
+        <div class="dimensiones1">1</div>
+        <div class="dimensiones2">2</div>
+        <div class="dimensiones3">3</div>
+        <div class="dimensiones4">4</div>
+        <div class="dimensiones5">5</div>
+    </div>
+</body>
+</html>
